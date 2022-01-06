@@ -5,7 +5,7 @@ export function useForm(inputs = {}) {
   const [formError, setFormError] = useState('');
 
   // anonymous function to handle form inputs
-  const handleFormInput = (event) => {
+  const handleFormChange = (event) => {
     const { name, value } = event.target;
     setFormState((prevState) => {
       return { ...prevState, [name]: value };
