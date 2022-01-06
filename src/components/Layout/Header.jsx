@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.css';
+import pizzaFace from '../../assets/pizza-face.png';
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Link to="/">
+      <Link className={styles.logoLink} to="/">
+        <img className={styles.logo} src={pizzaFace} alt="pizza face" />
         <h1>Pizza Face Employee Directory</h1>
       </Link>
       <p>

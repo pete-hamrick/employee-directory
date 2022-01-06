@@ -6,6 +6,16 @@
   border-bottom: 3px double black;
 }
 
+.logoLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
 .button {
   margin: 10px;
 }
