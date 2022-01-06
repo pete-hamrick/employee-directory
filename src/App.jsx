@@ -20,7 +20,7 @@ export default function App() {
           <Route path="/login">
             <Auth />
           </Route>
-          <Route path="/signup">
+          <Route path="/register">
             <Auth />
           </Route>
           <Route path="/confirm-email">
