@@ -14,7 +14,7 @@ export default function ProfileForm() {
         <input id="birthdate" name="birthdate" type="date" />
         {/* biography input */}
         <label htmlFor="bio">Bio</label>
-        <input id="bio" name="bio" type="textarea" />
+        <textarea id="bio" name="bio" type="textarea" />
 
         <button type="submit">Submit</button>
       </fieldset>
