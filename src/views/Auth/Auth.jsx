@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import UserForm from '../../components/UserForm/UserForm';
 
 export default function Auth() {
@@ -8,6 +9,9 @@ export default function Auth() {
       {/* form component here */}
       <UserForm />
       {/* ternary for already have acct vs need an acct with links to login or register */}
+      <p>
+        Already have an account? <Link to="/login">Sign In</Link>
+      </p>
     </div>
   );
 }

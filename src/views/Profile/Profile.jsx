@@ -1,15 +1,10 @@
+import ProfileForm from '../../components/ProfileForm/ProfileForm';
+
 export default function Profile() {
   return (
     <div>
-      <h1>Profile</h1>
-      <fieldset>
-        {/* ternary legend message */}
-        <legend>Sign Up</legend>
-        {/* name input */}
-        {/* email display(not editable) */}
-        {/* birthday input */}
-        {/* biography input */}
-      </fieldset>
+      <ProfileForm />
+      {/* if there is a user, render a ProfileView component */}
     </div>
   );
 }
