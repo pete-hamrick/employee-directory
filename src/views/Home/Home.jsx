@@ -14,7 +14,9 @@ export default function Home() {
       <p>Create and Account, then log in and fill out the requested details</p>
       <p>Thank you for being a part of the team!</p>
       {user.email ? (
-        <Link to="/profile">View Your Profile</Link>
+        <Link to="/profile">
+          <button>View Your Profile</button>
+        </Link>
       ) : (
         <>
           {' '}
