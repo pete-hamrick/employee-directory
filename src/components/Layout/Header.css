@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px double black;
+}
+
+.button {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
