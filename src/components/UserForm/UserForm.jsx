@@ -1,9 +1,9 @@
-export default function UserForm() {
+export default function UserForm({ onSubmit, label }) {
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <fieldset>
         {/* make legend label be dynamic(pass as props from auth) */}
-        <legend>Label</legend>
+        <legend>{label}</legend>
 
         <label htmlFor="email">Email</label>
         <input id="email" type="email" name="email" />
