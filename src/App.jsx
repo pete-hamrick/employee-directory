@@ -1,20 +1,36 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './views/Home';
+import Header from './components/Layout/Header';
+import Auth from './views/Auth/Auth';
+import ConfirmEmail from './views/Auth/ConfirmEmail';
+import Home from './views/Home/Home';
+import Profile from './views/Profile/Profile';
 
 export default function App() {
   return (
     <>
       <Router>
-        <Switch>
-          <Route path="/profile/edit"></Route>
-          <Route path="/profile"></Route>
-          <Route path="/login"></Route>
-          <Route path="/signup"></Route>
-          <Route path="/confirm-email"></Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Header>
+          <Switch>
+            <Route path="/profile/edit">
+              <Profile />
+            </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/login">
+              <Auth />
+            </Route>
+            <Route path="/signup">
+              <Auth />
+            </Route>
+            <Route path="/confirm-email">
+              <ConfirmEmail />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Header>
       </Router>
     </>
   );
