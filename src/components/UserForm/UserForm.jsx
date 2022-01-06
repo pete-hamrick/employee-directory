@@ -13,6 +13,7 @@ export default function UserForm() {
 
         <button type="submit">
           {/* add loading state, disable when loading and change text to authenticating */}
+          Submit
         </button>
         {/* add form error label here if there is a label */}
       </fieldset>
