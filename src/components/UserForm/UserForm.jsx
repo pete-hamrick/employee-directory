@@ -1,4 +1,13 @@
+import { useState } from 'react';
+import { useForm } from '../../hooks/useForm.js';
+
 export default function UserForm({ onSubmit, label }) {
+  const [loading, setLoading] = useState(false);
+  const { formState, formError, handleFormChange, setFormError } = useForm({
+    email: '',
+    password: '',
+  });
+
   return (
     <form onSubmit={onSubmit}>
       <fieldset>
