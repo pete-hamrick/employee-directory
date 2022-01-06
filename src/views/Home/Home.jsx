@@ -9,6 +9,7 @@ export default function Home() {
       </p>
       <p>Create and Account, then log in and fill out the requested details</p>
       <p>Thank you for being a part of the team!</p>
+      {/* links to either view profile or register and login */}
     </div>
   );
 }
