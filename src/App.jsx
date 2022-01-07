@@ -12,7 +12,7 @@ export default function App() {
         <Header />
         <Switch>
           <Route path="/profile/edit">
-            <Profile />
+            <Profile isEditing />
           </Route>
           <Route path="/profile">
             <Profile />
